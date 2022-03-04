@@ -5,15 +5,15 @@ const { Schema } = mongoose;
 const Dish = require('./dish');
 
 const orderSchema = new Schema({
-  userName: {
+  customerName: {
     type: String,
     required: true,
   },
-  userLastName: {
+  customerLastName: {
     type: String,
     required: true,
   },
-  userGeolocation: {
+  customerGeolocation: {
     latitude: {
       type: Number,
       required: true,
@@ -22,6 +22,10 @@ const orderSchema = new Schema({
       type: Number,
       required: true,
     },
+  },
+  creationDate: {
+    type: Date,
+    default: Date.now(),
   },
   restaurantName: {
     type: String,

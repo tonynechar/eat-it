@@ -21,7 +21,7 @@ app.use(router);
 // Catch requests with invalid endpoints
 app.get('*', (req, res) => {
   res.status(404);
-  res.send('⛔️ Error, not found');
+  res.send('⛔️ Error, not found.');
 });
 
 app.listen(SERVER_PORT, (err) => {

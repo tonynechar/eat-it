@@ -15,7 +15,7 @@ const restaurantSchema = new Schema({
   },
   categories: {
     type: [String],
-    enum: ['Pizza', 'Pasta', 'Burgers', 'Fast Food', 'Healthy', 'Sushi', 'Seafood'],
+    enum: ['Pizza 🍕', 'Pasta 🍝', 'Burgers 🍔', 'Fast Food 🍟', 'Healthy 🥗', 'Sushi 🍣', 'Seafood 🐟'],
     required: true,
   },
   menu: [

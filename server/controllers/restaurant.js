@@ -3,7 +3,9 @@ const restaurantModel = require('../models/restaurant');
 
 const getRestaurants = async (req, res) => {
   try {
-    return await restaurantModel.find();
+    const restaurants = await restaurantModel.find();
+    res.status(200)
+    res.send(restaurants);
   } catch (err) {
     res.status(500).send(err);
   }

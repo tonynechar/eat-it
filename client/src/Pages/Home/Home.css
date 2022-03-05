@@ -1,0 +1,38 @@
+.categories-container {
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: gray;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+}
+
+.categories-container::-webkit-scrollbar {
+  display: none;
+}
+
+.icon-container {
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+
+  text-align: center;
+  margin: 6px;
+
+}
+
+.icon-container .icon {
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: blue;
+
+  font-size: 40px;
+}

@@ -1,10 +1,16 @@
-import React from 'react';
-import './Dish.css';
+const BASE_URL = 'http://localhost:3001';
 
-function ApiService() {
-  return (
-    <div>ApiService</div>
-  )
+const apiService = {}
+
+apiService.getRestaurants = (category) => {
+  return fetch(`${BASE_URL}/${category}`, {
+    method: 'GET',
+    credentials: 'include',
+    mode: 'cors',
+    headers: { 'Content-Type': 'application/json' },
+  })
+    .then((res) => res.json())
+    .catch((err) => console.log(err));
 }
 
-export default ApiService
+export default apiService;

@@ -1,0 +1,39 @@
+nav {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+nav ul {
+
+  background-color: blue;
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  background-color: green;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+nav li p {
+  font-size: 25px;
+}
+
+nav li h3 {
+  font-weight: lighter;
+  font-size: 14px;
+}

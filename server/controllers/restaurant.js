@@ -13,8 +13,8 @@ const getRestaurants = async (req, res) => {
 
 const getOneRestaurant = async (req, res) => {
   try {
-    const restaurantName = req.body;
-    const restaurant = await restaurantModel.findOne({ restaurantName: restaurantName });
+    const restaurantId = req.params.id;
+    const restaurant = await restaurantModel.findOne({ _id: restaurantId });
     res.status(200);
     res.send(restaurant);
   } catch (err) {

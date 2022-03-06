@@ -20,7 +20,7 @@ function RestaurantItem({ restaurant }) {
 
   return (
   
-    <div className='restaurant-item-container' onClick={() => {navigate(`/restaurants/${restaurant.restaurantName.toLowerCase()}`)}}>
+    <div className='restaurant-item-container' onClick={() => {navigate(`/restaurants/${restaurant.restaurantName.toLowerCase().split(' ').join('-')}/${restaurant._id}`)}}>
       <img src={restaurant.restaurantImage} alt=''/>
       <div className='restaurant-item-subcontainer'>
         <p className='name'>{restaurant.restaurantName}</p>

@@ -6,6 +6,8 @@ const router = new Router();
 
 router.get('/restaurants', restaurantController.getRestaurants);
 
+router.get('/restaurants/:name/:id', restaurantController.getOneRestaurant)
+
 router.post('/restaurants', restaurantController.createRestaurant);
 
 // router.get('/restaurant/?restaurantName')

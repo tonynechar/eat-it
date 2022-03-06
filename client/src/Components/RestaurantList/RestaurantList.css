@@ -1,0 +1,8 @@
+.restaurant-list {
+  margin: 10px auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aqua;
+}

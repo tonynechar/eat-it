@@ -13,7 +13,7 @@ function RestaurantList({ restaurants, category }) {
   });
 
   return (
-    <div>
+    <div className='restaurant-list'>
       {categorizedRestaurants}
     </div>
   )

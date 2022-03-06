@@ -1,0 +1,23 @@
+.restaurant-item-container {
+  height: 20%;
+  width: 94%;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: orange;
+}
+
+img {
+  height: 100px;
+  width: 100%;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.restaurant-item-subcontainer {
+  padding: 4px 8px;
+}
+
+.name {
+  font-weight: bold;
+}
+

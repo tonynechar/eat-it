@@ -2,8 +2,8 @@ const BASE_URL = 'http://localhost:3001';
 
 const apiService = {}
 
-apiService.getRestaurants = (category) => {
-  return fetch(`${BASE_URL}/${category}`, {
+apiService.getRestaurants = () => {
+  return fetch(`${BASE_URL}/restaurants`, {
     method: 'GET',
     credentials: 'include',
     mode: 'cors',

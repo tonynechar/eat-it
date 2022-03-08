@@ -1,0 +1,11 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.leaflet-container {
+  height: 25vh;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 6px;
+}

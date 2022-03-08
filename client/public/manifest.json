@@ -1,6 +1,7 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
+  "permissions": ["geolocation"],
   "icons": [
     {
       "src": "favicon.ico",

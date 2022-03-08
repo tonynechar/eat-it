@@ -1,0 +1,7 @@
+.dishes-list-container {
+  border-width: 2px;
+  /* border-style: solid; */
+  border-color: violet;
+  margin: 0px auto;
+  width: 92%;
+}

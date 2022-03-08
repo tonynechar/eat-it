@@ -9,29 +9,14 @@ function RestaurantItem({ restaurant }) {
     categoriesText.push(restaurant.categories[i].slice(0, -3));
   }
 
-  // <span> - </span>{restaurant.categories[1]}
-
-  // console.log(categoriesText);
-
-  // let additionalCategories = [];
-  // for (let i = 1; i < categoriesText.length; i++) {
-  //   additionalCategories.append(<span> - </span>categoriesText[i]);
-  // }
-
   return (
   
     <div className='restaurant-item-container' onClick={() => {navigate(`/restaurants/${restaurant.restaurantName.toLowerCase().split(' ').join('-')}/${restaurant._id}`)}}>
       <img src={restaurant.restaurantImage} alt=''/>
       <div className='restaurant-item-subcontainer'>
         <p className='name'>{restaurant.restaurantName}</p>
-        {/* <p>{restaurant.categories[0]}{}</p> */}
-
       </div>
     </div>
-
-    // <div>
-
-    // </div>
   )
 }
 

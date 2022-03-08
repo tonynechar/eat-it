@@ -20,9 +20,9 @@ const restaurantSchema = new Schema({
   },
   menu: [
     {
-      type: [MenuCategory],
+      type: MenuCategory,
       required: true,
-    }
+    },
   ],
   address: {
     street: {

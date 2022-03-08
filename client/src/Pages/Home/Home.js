@@ -7,7 +7,7 @@ function Home() {
 
   const [restaurants, setRestaurants] = useState([]);
   const [category, setCategory] = useState('');
-
+  
   useEffect(() => {
     apiService.getRestaurants()
     .then(data => setRestaurants(data));

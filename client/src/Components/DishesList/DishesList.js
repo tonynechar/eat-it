@@ -1,9 +1,18 @@
 import React from 'react';
-import './DishesList';
+import DishesSection from '../DishesSection/DishesSection';
+import { v4 as uuidv4 } from 'uuid';
+import './DishesList.css';
 
-function DishesList() {
+function DishesList({ menu }) {
+
+  const sections = menu.map(section => {
+    return <DishesSection key={uuidv4()} section={section} />;
+  });
+
   return (
-    <div>DishesList</div>
+    <div className='dishes-list-container'>
+      {sections}
+    </div>
   )
 }
 

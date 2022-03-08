@@ -6,7 +6,7 @@
   background-color: orange;
 }
 
-img {
+.restaurant-item-container img {
   height: 100px;
   width: 100%;
   border-top-right-radius: 8px;

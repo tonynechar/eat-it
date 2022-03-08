@@ -5,11 +5,10 @@ import './RestaurantList.css';
 function RestaurantList({ restaurants, category }) {
 
   const categorizedRestaurants = restaurants.map(restaurant => {
-    if (category === '') {
-      return <RestaurantItem key={restaurant._id} restaurant={restaurant} />;
-    } else if (restaurant.categories.includes(category)) {
+    if (restaurant.categories.includes(category) || category === '') {
       return <RestaurantItem key={restaurant._id} restaurant={restaurant} />;
     }
+    return null;
   });
 
   return (

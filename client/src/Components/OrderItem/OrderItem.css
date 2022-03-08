@@ -1,0 +1,21 @@
+.order-item-container img {
+  height: 100px;
+  width: 120px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  object-fit: cover;
+}
+
+.order-item-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.order-item-info-container {
+  margin: 10px;
+}

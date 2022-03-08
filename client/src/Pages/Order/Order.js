@@ -6,9 +6,7 @@ import './Order.css';
 
 function Order() {
 
-  const { order, setOrder } = useContext(OrderContext);
-
-
+  const { order } = useContext(OrderContext);
 
   const [userCoordinates, setUserCoordinates] = useState({});
   
@@ -36,12 +34,13 @@ function Order() {
   }
   
   const submitHandler = () => {
-    if (userCoordinates.latitude === undefined || userCoordinates.longitude === undefined) {
+    console.log(order);
+    if (userCoordinates.latitude !== undefined || userCoordinates.longitude !== undefined) {
 
     }
   }
   return (
-    <div>
+    <div className='order-page-container'>
       <h2>Order</h2>
       <OrderList dishes={order.dishes} />
       <form onSubmit={submitHandler}>
@@ -79,7 +78,7 @@ function Order() {
               />
               <Marker position={[userCoordinates.latitude, userCoordinates.longitude]}>
                 <Popup>
-                  Your Location.
+                  Your Location
                 </Popup>
               </Marker>
             </MapContainer>

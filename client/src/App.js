@@ -14,7 +14,7 @@ export const OrderContext = React.createContext(null);
 
 function App() {
 
-  const [order, setOrder] = useState({restaurantId: '', dishes: {}, userInfo: {}});
+  const [order, setOrder] = useState({restaurantId: '', dishes: [], userInfo: {}});
 
   return (
     <OrderContext.Provider value={{order, setOrder}}>

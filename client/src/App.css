@@ -1,5 +1,6 @@
 body {
   min-width: 180px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .app-container {
@@ -12,4 +13,8 @@ body {
   flex-grow: 1;
   height: 90vh;
   overflow-y: scroll;
+}
+
+.main-container::-webkit-scrollbar {
+  display: none;
 }

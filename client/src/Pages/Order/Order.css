@@ -1,11 +1,48 @@
+.order-page-container {
+  width: 92%;
+  margin: 20px auto;
+}
+
+.order-page-container::-webkit-scrollbar {
+  display: none;
+}
+
 form {
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input {
+  border-style: solid;
+  border-color: lightgray;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 0.2);
+  border-radius: 6px;
+  padding: 6px;
+}
+
+form input:focus {
+  /*Change focus input color here*/
+  outline-color: green;
+}
+
+form button {
+  border-style: none;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 0.2);
+  margin-top: 12px;
+  border-radius: 8px;
+  width: 240px;
+  align-self: center;
+  padding: 10px 12px;
 }
 
 .leaflet-container {
   height: 25vh;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 12px auto;
   border-radius: 6px;
 }

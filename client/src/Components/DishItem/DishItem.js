@@ -11,19 +11,18 @@ function DishItem({ dish }) {
   const handleClick = (e, dish) => {
     e.preventDefault();
     if (!order.restaurantId || params._id !== order.restaurantId) {
-      const newDish = {
-        [dish._id]: 1 
-      }
-      setOrder({...order, restaurantId: params._id, dishes: Object.assign(order.dishes, newDish)});
-    } else if (order.restaurantId && order.dishes.hasOwnProperty(dish._id)) {
-      const newDish = order.dishes[dish._id] += 1;
-      setOrder({...order, dishes: Object.assign(order.dishes, newDish)});
-    } else if (order.restaurantId && !order.dishes.hasOwnProperty(dish._id)) {
-      const newDish = {
-        [dish._id]: 1 
-      }
-      setOrder({...order, restaurantId: params._id, dishes: Object.assign(order.dishes, newDish)});
+      dish.quantity = 1;
+      order.dishes.push(dish);
+      setOrder({...order, restaurantId: params._id, dishes: order.dishes});
+    } else if (order.restaurantId && order.dishes.some(current => current.dishName === dish.dishName)) {
+      dish.quantity += 1;
+      setOrder({...order, dishes: order.dishes});
+    } else if (order.restaurantId && !order.dishes.some(current => current.dishName === dish.dishName)) {
+      dish.quantity = 1;
+      order.dishes.push(dish);
+      setOrder({...order, dishes: order.dishes});
     }
+    console.log(order.dishes);
   }
 
   return (

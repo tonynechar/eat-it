@@ -3,13 +3,10 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.2);
 }
 
 nav ul {
-
-  background-color: blue;
-
   height: 100%;
   width: 100%;
   display: flex;
@@ -18,8 +15,6 @@ nav ul {
 }
 
 nav li {
-  background-color: green;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +28,9 @@ nav li p {
   font-size: 25px;
 }
 
-nav li h3 {
+nav ul li h3 {
   font-weight: lighter;
   font-size: 14px;
+  text-decoration: none;
+  color: black;
 }

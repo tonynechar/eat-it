@@ -24,7 +24,7 @@ function Home() {
         Search
       </div>
       <div>
-        <h3>Restaurants</h3>
+        <h3 className='categories-title'>Restaurants</h3>
         <div className='categories-container'>
           <div className='icon-container' onClick={(e) => handleClick(e, '')}>
             <p className='icon'>🍽</p>

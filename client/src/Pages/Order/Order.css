@@ -7,6 +7,28 @@
   display: none;
 }
 
+.empty-order-message {
+  min-width: 100%;
+  min-height: 70vh;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 60%;
+}
+
+.order-summary {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  margin: 10px 12px;
+}
+
+.total {
+  margin: 10px 16px;
+}
+
 form {
   display: flex;
   flex-direction: column;

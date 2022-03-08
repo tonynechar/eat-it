@@ -11,6 +11,7 @@ function DishItem({ dish }) {
   const handleClick = (e, dish) => {
     e.preventDefault();
     if (!order.restaurantId || params._id !== order.restaurantId) {
+      setOrder(Object.assign(order, { dishes: [] }));
       dish.quantity = 1;
       order.dishes.push(dish);
       setOrder({...order, restaurantId: params._id, dishes: order.dishes});

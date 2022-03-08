@@ -3,3 +3,11 @@
   width: 390px;
   object-fit: cover;
 }
+
+.restaurant-title {
+  margin: 12px;
+}
+
+.dishes-list-container h3 {
+  margin: 2px 10px;
+}

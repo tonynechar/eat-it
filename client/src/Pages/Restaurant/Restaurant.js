@@ -23,7 +23,7 @@ function Restaurant() {
       <div className='restaurant-image-container'>
         <img src={currentRestaurant.restaurantImage} alt=''/>
       </div>
-      <h2>{currentRestaurant.restaurantName}</h2>
+      <h2 className='restaurant-title'>{currentRestaurant.restaurantName}</h2>
       <DishesList menu={menu} />
     </div>
   )

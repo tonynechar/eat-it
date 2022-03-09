@@ -1,0 +1,146 @@
+[
+  {
+    "restaurantName": "Burgerland",
+    "restaurantImage": "https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    "categories": [
+      "Burgers 🍔",
+      "Fast Food 🍟"
+    ],
+    "menu": [
+      {
+        "categoryName": "Starters",
+        "dishes": [
+          {
+            "dishName": "Cheesy Fries",
+            "dishImage": "https://images.pexels.com/photos/2741461/pexels-photo-2741461.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+            "description": "Irresistible fries served with cheese on top",
+            "price": 7.5,
+            "availability": true,
+            "_id": "62280920084f212982836030"
+          },
+          {
+            "dishName": "Nachos",
+            "dishImage": "https://images.pexels.com/photos/5696564/pexels-photo-5696564.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "description": "Mouthwatering nachos served with spicy guacamole",
+            "price": 9,
+            "availability": true,
+            "_id": "62280920084f212982836031"
+          }
+        ],
+        "_id": "62280920084f21298283602f"
+      },
+      {
+        "categoryName": "Burgers",
+        "dishes": [
+          {
+            "dishName": "BBQ Burger",
+            "dishImage": "https://images.pexels.com/photos/2282537/pexels-photo-2282537.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "description": "Deliciously grilled burger with BBQ sauce, cheese and bacon",
+            "price": 13.5,
+            "availability": true,
+            "_id": "62280920084f212982836033"
+          },
+          {
+            "dishName": "Classy Classic",
+            "dishImage": "https://images.pexels.com/photos/1556688/pexels-photo-1556688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+            "description": "The best of the best, served with cheese, sauces and fries",
+            "price": 12,
+            "availability": true,
+            "_id": "62280920084f212982836034"
+          }
+        ],
+        "_id": "62280920084f212982836032"
+      }
+    ],
+    "address": {
+      "street": "Burger Blvd",
+      "number": 3,
+      "postalCode": 10500
+    },
+    "geolocation": {
+      "latitude": 52.52574335096922,
+      "longitude": 13.369247114863333
+    },
+    "_id": "62280920084f21298283602e",
+    "__v": 0
+  },
+  {
+    "restaurantName": "House of Luigi",
+    "restaurantImage": "https://images.pexels.com/photos/6223226/pexels-photo-6223226.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "categories": [
+      "Pizza 🍕",
+      "Pasta 🍝"
+    ],
+    "menu": [
+        {
+          "categoryName": "Sides",
+          "dishes": [
+              {
+                "dishName": "Bread Basket",
+                "dishImage": "https://images.pexels.com/photos/2000511/pexels-photo-2000511.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "description": "A sort of our freshly baked bread",
+                "price": 6.5,
+                "availability": true,
+                "_id": "62280923084f212982836038"
+              }
+          ],
+          "_id": "62280923084f212982836037"
+        },
+        {
+          "categoryName": "Pizzas",
+          "dishes": [
+              {
+                "dishName": "Napoletana Prosciutto",
+                "dishImage": "https://images.pexels.com/photos/4748485/pexels-photo-4748485.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "description": "Our truly napolitan fresh dough with tomato sauce, prosciutto and arugula",
+                "price": 12.5,
+                "availability": true,
+                "_id": "62280923084f21298283603a"
+              },
+              {
+                "dishName": "Margherita",
+                "dishImage": "https://images.pexels.com/photos/10836977/pexels-photo-10836977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "description": "Baked and made with our famous pomodoro sauce and mozzarella cheese",
+                "price": 11,
+                "availability": true,
+                "_id": "62280923084f21298283603b"
+              }
+          ],
+          "_id": "62280923084f212982836039"
+        },
+        {
+          "categoryName": "Pastas",
+          "dishes": [
+              {
+                "dishName": "Fetuccine Alfredo",
+                "dishImage": "https://images.pexels.com/photos/11220209/pexels-photo-11220209.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "description": "Handmade fetuccine with our delicious Alfredo sauce",
+                "price": 12,
+                "availability": true,
+                "_id": "62280923084f21298283603d"
+              },
+              {
+                "dishName": "Carbonara",
+                "dishImage": "https://images.pexels.com/photos/3606799/pexels-photo-3606799.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                "description": "Our carbonara style daily-made pasta",
+                "price": 10.5,
+                "availability": true,
+                "_id": "62280923084f21298283603e"
+              }
+          ],
+          "_id": "62280923084f21298283603c"
+        }
+    ],
+    "address": {
+      "street": "Luigi Blvd",
+      "number": 6,
+      "postalCode": 42902
+    },
+    "geolocation": {
+      "latitude": 52.523627803661036,
+      "longitude": 13.408780061105295
+    },
+    "_id": "62280923084f212982836036",
+    "__v": 0
+  }
+]

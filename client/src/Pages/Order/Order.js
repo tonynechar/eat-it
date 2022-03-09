@@ -11,6 +11,7 @@ function Order() {
 
   const [userCoordinates, setUserCoordinates] = useState({});
   const [total, setTotal] = useState(0);
+  const [redirect, setRedirect] = useState('');
 
   useEffect(() => {
     for (let i = 0; i < order.dishes.length; i++) {
@@ -38,7 +39,7 @@ function Order() {
       .then(navigator.geolocation.getCurrentPosition(success, error, options))
       .catch(err => console.error(err));
     } else {
-      /* geolocation IS NOT available */
+      // CASE GEOLOCATION NOT AVAILABLE
     }
   }
   
@@ -55,7 +56,9 @@ function Order() {
     }
     setOrder(Object.assign(order, data));
     if (userCoordinates.latitude !== undefined && userCoordinates.longitude !== undefined) {
-      apiService.createOrder(JSON.stringify(order));
+      apiService.createOrder(order)
+        .then(response => setRedirect(response))
+        .catch(err => console.error(err));
     }
   }
 
@@ -111,7 +114,12 @@ function Order() {
                 </MapContainer>
               </div>
             }
-            <button type='submit'>Placer Order</button>
+            { redirect === '' ?
+              <button type='submit'>Create Order</button> :
+              <div>
+                <a href={redirect} target='_blank' className='send-order-button'>Send Order</a>
+              </div>
+            }
           </form>
         </div> :
         <div className='empty-order-message'>

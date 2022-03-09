@@ -34,11 +34,7 @@ const createRestaurant = async (req, res) => {
 }
 
 const createOrder = async (req, res) => {
-  try {
-    //
-  } catch (err) {
-    res.status(500).send(err);
-  }
+  // REFACTOR AND IMPLEMENT DATA MODEL HERE
 }
 
 module.exports = { getRestaurants, getOneRestaurant, createRestaurant, createOrder };

@@ -34,3 +34,7 @@ nav ul li h3 {
   text-decoration: none;
   color: black;
 }
+
+nav ul li a {
+  text-decoration: none;
+}

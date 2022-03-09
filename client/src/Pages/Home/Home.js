@@ -19,10 +19,10 @@ function Home() {
   }
 
   return (
-    <div>
-      <div>
+    <div className='home-container'>
+      {/* <div>
         Search
-      </div>
+      </div> */}
       <div>
         <h3 className='categories-title'>Restaurants</h3>
         <div className='categories-container'>

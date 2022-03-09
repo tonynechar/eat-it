@@ -23,7 +23,6 @@ function DishItem({ dish }) {
       order.dishes.push(dish);
       setOrder({...order, dishes: order.dishes});
     }
-    console.log(order.dishes);
   }
 
   return (

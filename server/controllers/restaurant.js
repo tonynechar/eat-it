@@ -33,4 +33,12 @@ const createRestaurant = async (req, res) => {
   }
 }
 
-module.exports = { getRestaurants, getOneRestaurant, createRestaurant };
+const createOrder = async (req, res) => {
+  try {
+    //
+  } catch (err) {
+    res.status(500).send(err);
+  }
+}
+
+module.exports = { getRestaurants, getOneRestaurant, createRestaurant, createOrder };

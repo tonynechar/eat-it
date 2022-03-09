@@ -24,4 +24,16 @@ apiService.getOneRestaurant = (name, id) => {
     .catch((err) => console.log(err));
 }
 
+apiService.createOrder = (order) => {
+  return fetch(`${BASE_URL}/order`, {
+    method: 'POST',
+    credentials: 'include',
+    mode: 'cors',
+    headers: { 'Content-Type': 'application/json' },
+    body: order,
+  })
+    .then((res) => res.json())
+    .catch((err) => console.log(err));
+}
+
 export default apiService;

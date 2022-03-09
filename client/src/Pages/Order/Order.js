@@ -2,11 +2,12 @@ import React, { useState, useContext, useEffect } from 'react';
 import { OrderContext } from '../../App';
 import OrderList from '../../Components/OrderList/OrderList';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import apiService from '../../Services/ApiService';
 import './Order.css';
 
 function Order() {
 
-  const { order } = useContext(OrderContext);
+  const { order, setOrder } = useContext(OrderContext);
 
   const [userCoordinates, setUserCoordinates] = useState({});
   const [total, setTotal] = useState(0);
@@ -43,10 +44,19 @@ function Order() {
   
   const submitHandler = (e) => {
     e.preventDefault();
-    if (userCoordinates.latitude !== undefined || userCoordinates.longitude !== undefined) {
-      
+    const data = {
+      userInfo: {
+        name: e.target.name.value,
+        lastName: e.target.lastName.value,
+        phoneNumber: e.target.phoneNumber.value
+      },
+      total: total,
+      userCoordinates: userCoordinates
     }
-    console.log(order);
+    setOrder(Object.assign(order, data));
+    if (userCoordinates.latitude !== undefined && userCoordinates.longitude !== undefined) {
+      apiService.createOrder(JSON.stringify(order));
+    }
   }
 
 

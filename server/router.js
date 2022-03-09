@@ -10,6 +10,8 @@ router.get('/restaurants/:name/:id', restaurantController.getOneRestaurant)
 
 router.post('/restaurants', restaurantController.createRestaurant);
 
+router.post('/order', restaurantController.createOrder);
+
 // router.get('/restaurant/?restaurantName')
 
 // router.get('/restaurants/categories', )
